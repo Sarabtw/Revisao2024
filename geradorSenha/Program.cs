@@ -30,9 +30,8 @@ class Program
                 return;
             }
 
-            Random random = new Random
             string senha = "";
-			
-		}
-	}
-}    
+            Random random = new Random();
+        }
+    }
+}            
