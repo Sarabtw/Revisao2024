@@ -1,26 +1,38 @@
-﻿
-Console.WriteLine("Criador de senha ");
+﻿using System;
 
-Console.WriteLine("Insira a quantidade de caracteres que deseja em sua senha: (Ps: Máximo 10 e minimo 4)");
-if (int.TryParse(Console.ReadLine(), out int caracteres)) ;
+class Program
 {
-    Console.WriteLine("Você deseja adicionar números na sua senha?");
-    string numeros = Console.ReadLine();
-
-    Console.WriteLine("Você deseja inserir letras na senha?");
-    string letras = Console.ReadLine();
-
-    Console.WriteLine("Você deseja adicionar caracteres especiais?(Ex: @, !, # ou -)");
-    string especiais = Console.ReadLine();
-
-    Random random = new Random();
-
-    if (caracteres <= 4)
+    static void Main(string[] args)
     {
-        Console.WriteLine("Não é possivel criar a sua senha (ERRO).");
-    }
-    if (caracteres >= 10)
-    {
-        Console.WriteLine("Não é possivel criar a sua senha (ERRO).");
-    }
-}
+        Console.WriteLine("Criador de senha");
+
+        Console.WriteLine("Insira a quantidade de caracteres que deseja em sua senha: (Máximo 10 e mínimo 4)");
+        if (int.TryParse(Console.ReadLine(), out int caracteres))
+        {
+            if (caracteres < 4 || caracteres > 10)
+            {
+                Console.WriteLine("Erro: O número de caracteres deve ser entre 4 e 10.");
+                return;
+            }
+
+            Console.WriteLine("Você deseja adicionar números na sua senha? (sim/não)");
+            string numeros = Console.ReadLine();
+
+            Console.WriteLine("Você deseja adicionar letras na senha? (sim/não)");
+            string letras = Console.ReadLine();
+
+            Console.WriteLine("Você deseja adicionar caracteres especiais? (sim/não)");
+            string especiais = Console.ReadLine();
+
+            if (numeros != "sim" && letras != "sim" && especiais != "sim")
+            {
+                Console.WriteLine("Erro: Você deve escolher pelo menos uma opção.");
+                return;
+            }
+
+            Random random = new Random
+            string senha = "";
+			
+		}
+	}
+}    
