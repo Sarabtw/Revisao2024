@@ -32,6 +32,18 @@ class Program
 
             string senha = "";
             Random random = new Random();
+
+            string listaNumeros = "0123456789";
+            string listaLetras = "abcdefghijklmnopqrstuvwxyz";
+            string listaCaracteres = "@#!.-_";
+            
+			  for (int i = 0; i < caracteres; i++)
+            {
+                if (numeros == "sim" && senha.Length < caracteres)
+                {
+				   senha += listaNumeros[random.Next(listaNumeros.Length)];
+				}
         }
     }
-}            
+}  
+}
