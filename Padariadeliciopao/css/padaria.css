@@ -1,0 +1,36 @@
+.navbar .nav-link
+{
+    color: brown; 
+    font-weight: bold; 
+    font-size: 1.3rem; 
+}
+.navbar
+{
+  background-color: whitesmoke;
+}
+
+.icone-navbar{
+  font-size: 20pt;
+  height: 15pt;
+
+}
+footer {
+    background-color: #f8f9fa; 
+    padding: 20px 0;
+    border-top: 2px solid #e4e4e4;
+}
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+}
+.footer-contact p {
+    margin: 0;
+    font-size: 14px;
+}
+.footer-contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+.footer-contact a:hover {
+    text-decoration: underline;
+}
