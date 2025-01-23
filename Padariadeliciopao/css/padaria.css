@@ -15,9 +15,9 @@
 
 }
 footer {
-    background-color: #f8f9fa; 
+    background-color: whitesmoke; 
     padding: 20px 0;
-    border-top: 2px solid #e4e4e4;
+    border-top: 2px solid whitesmoke;
 }
 .footer-logo img {
     max-width: 100px;
