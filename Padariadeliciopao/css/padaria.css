@@ -6,7 +6,7 @@
 }
 .navbar
 {
-  background-color: whitesmoke;
+  background-color: beige;
 }
 
 .icone-navbar{
@@ -15,9 +15,9 @@
 
 }
 footer {
-    background-color: whitesmoke; 
+    background-color: beige; 
     padding: 20px 0;
-    border-top: 2px solid whitesmoke;
+    border-top: 2px solid beige;
 }
 .footer-logo img {
     max-width: 100px;

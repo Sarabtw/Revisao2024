@@ -33,6 +33,67 @@
              {
                 color: bisque;
              }
+             
+        
+             .product-container {
+            position: relative;
+        }
+        .product-scroll {
+            overflow-x: hidden;
+            white-space: nowrap;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+        }
+        .product-card {
+            display: inline-block;
+            width: 200px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .product-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        }
+
+       .product-title {
+        font-weight: bold;
+        margin: 10px 0 5px;
+        }
+
+        .btn-custom {
+        margin-top: 10px; 
+        background-color:#5b3c2c ;
+        }
+        .btn-custom:hover {
+            background-color: #5b3c2c;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #6c4c3c;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .arrow-left {
+            left: -20px;
+        }
+        .arrow-right {
+            right: -20px;
+        }
+        .arrow:hover {
+            background-color: #5b3c2c;
+        }
         </style>
     </head>
     <body>
@@ -42,18 +103,11 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item mx-3"><a class="nav-link" href="index.html">Início</a></li>
-                        
-                        <li class="nav-item dropdown mx-3">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Produtos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="Calca.html">Calças</a></li>
-                                <li><a class="dropdown-item" href="Time.html">Camisas de Time</a></li>
-                                <li><a class="dropdown-item" href="Street.html">Camisetas Streetwear</a></li>
-                            </ul>
-                        </li>
-                        
+         
+                        <li class="nav-item mx-3"><a class="nav-link" href="index.html">Sobre nós</a></li>
+
+                        <li class="nav-item mx-3"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+
                         <li class="nav-item mx-3"><a class="nav-link" href="Contato.html">Contato</a></li>
                     </ul>
                         </li>
@@ -75,6 +129,7 @@
             </nav>
         </header>
         <main>
+            
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -97,41 +152,102 @@
                 </button>
               </div>
 
-              <div class="container my-5">
-                <div class="row g-4">
+              
+            </div>
+            
+            <div class="container py-5">
+                <h2 class="text-center mb-4">ALGUNS DOS NOSSOS PRODUTOS</h2>
+                <div class="product-container">
                     
-                    <div class="col-md-4">
-                        <div class="card" style="height: 250px; background-image: url('img/1.png');">
-                            <div class="card-body">
-                                <h5 class="card-title">Pães</h5>
-                                <p class="card-text">Descrição do card 1 com imagem de fundo.</p>
-                                <a href="#" class="btn btn-primary">Ação 1</a>
-                            </div>
+                    <button class="arrow arrow-left" onclick="scrollLeft()">
+                        &lt;
+                    </button>
+                   
+                    <div class="product-scroll" id="productScroll">
+                       
+                        <div class="product-card">
+                            <img src="img/Brigadeiro-novo.jpg" alt="Tortilha de Limão">
+                            <p class="product-title">TORTILHA </p>
+                            <button class="btn btn-outline-dark">VER OPÇÕES</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="img/maracujatrufado.png" alt="Torta Maracujá Trufado">
+                            <p class="product-title">TORTA MARACUJÁ TRUFADO</p>
+                            <button class="btn btn-outline-dark">VER OPÇÕES</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="img/pessego.png" alt="Torta com Foto">
+                            <p class="product-title">TORTA COM FOTO</p>
+                            <button class="btn btn-outline-dark">LEIA MAIS</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="img/prestigioComCalda.jpg" alt="Torta Brigadeiro">
+                            <p class="product-title">TORTA BRIGADEIRO</p>
+                            <button class="btn btn-outline-dark">VER OPÇÕES</button>
+                        </div>
+                       
+                        <div class="product-card">
+                            <img src="img/prestigioGanacheN.jpg" alt="Outro Produto">
+                            <p class="product-title">OUTRO PRODUTO</p>
+                            <button class="btn btn-outline-dark">VER OPÇÕES</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/prestigioGanash.jpg" alt="Tortilha de Limão">
+                            <p class="product-title">TORTILHA DE LIMÃO</p>
+                            <button class="btn btn-outline-dark">VER OPÇÕES</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="img/pudim_600-e1723155011973.jpg" alt="Torta Maracujá Trufado">
+                            <p class="product-title">TORTA MARACUJÁ TRUFADO</p>
+                            <button class="btn btn-outline-dark">VER OPÇÕES</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="img/Redninho.jpg" alt="Torta com Foto">
+                            <p class="product-title">TORTA COM FOTO</p>
+                            <button class="btn btn-outline-dark">LEIA MAIS</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="img/Sensacao-baixa.jpg" alt="Torta Brigadeiro">
+                            <p class="product-title">TORTA BRIGADEIRO</p>
+                            <button class="btn btn-outline-dark">VER OPÇÕES</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="img/torta_foto_600.png" alt="Outro Produto">
+                            <p class="product-title">OUTRO PRODUTO</p>
+                            <button class="btn btn-outline-dark">VER OPÇÕES</button>
                         </div>
                     </div>
-                    
-                    <div class="col-md-4">
-                        <div class="card" style="height: 250px; background-image: url('img/2.png');">
-                            <div class="card-body">
-                                <h5 class="card-title">Bolos e doces</h5>
-                                <p class="card-text">Descrição do card 2 com imagem de fundo.</p>
-                                <a href="#" class="btn btn-primary">Ação 2</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="card" style="height: 250px; background-image: url('img/3.png');">
-                            <div class="card-body">
-                                <h5 class="card-title">Sanduíches</h5>
-                                <p class="card-text">Descrição do card 3 com imagem de fundo.</p>
-                                <a href="#" class="btn btn-primary">Ação 3</a>
-                            </div>
-                        </div>
-                    </div>
-                    
+                   
+                    <button class="arrow arrow-right" onclick="scrollRight()">
+                        &gt;
+                    </button>
                 </div>
             </div>
+        
+            <script>
+                const productScroll = document.getElementById('productScroll');
+        
+                function scrollLeft() {
+                    productScroll.scrollBy({
+                        left: -300,
+                        behavior: 'smooth'
+                    });
+                }
+        
+                function scrollRight() {
+                    productScroll.scrollBy({
+                        left: 300,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
         </main>
         <footer>
             <div class="container">
