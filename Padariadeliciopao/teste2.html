@@ -1,332 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio Criativo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        
-        body {
-            background-color: #f5f5f5;
-            font-family: 'Arial', sans-serif;
-        }
-
-        
-        h1 {
-            text-align: center;
-            color: #6c4c3c;
-            margin-top: 30px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        h5
-        {
-            text-align: center;
-            color: #6c4c3c;
-            margin-top: 30px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-       
-        .menu-card {
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-        }
-
-        .menu-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
-
-       
-        .menu-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        
-        .menu-card h5 {
-            color: #6c4c3c;
-            font-weight: bold;
-            margin: 15px 0 10px;
-        }
-
-        
-        .menu-card p {
-            color: #555;
-            font-size: 14px;
-            margin: 0 15px 15px;
-        }
-
-        
-        .menu-card button {
-            background-color: #6c4c3c;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .menu-card button:hover {
-            background-color: #5b3c2c;
-        }
-
-        
-        .menu-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - Nossa Padaria</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Nosso Cardápio</h1>
-    <h5>Nossos Bolos e Doces</h5>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <div class="menu-container">
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Torta de Morango">
-                <div class="text-center">
-                    <h5>Torta de Morango</h5>
-                    <p>Deliciosa torta recheada com morangos frescos e chantilly.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Brownie de Chocolate">
-                <div class="text-center">
-                    <h5>Brownie de Chocolate</h5>
-                    <p>Brownie artesanal feito com o mais puro chocolate belga.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cheesecake de Limão">
-                <div class="text-center">
-                    <h5>Cheesecake de Limão</h5>
-                    <p>Combinação perfeita de cremosidade e um toque cítrico.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-           
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Bolo Red Velvet">
-                <div class="text-center">
-                    <h5>Bolo Red Velvet</h5>
-                    <p>Tradicional bolo americano com cobertura de cream cheese.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            
-        </div>
+      <a class="navbar-brand" href="#">Nossa Padaria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#historia">História</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <h5>Nossos Salgados e Sanduiches</h5>
+  </nav>
+
+  <!-- Banner -->
+  <div class="container-fluid bg-light text-center py-5">
+    <h1>Bem-vindo à Nossa Padaria</h1>
+    <p>O lugar onde tradição e sabor se encontram!</p>
+  </div>
+
+  <!-- Seção Sobre Nós -->
+  <section id="sobre" class="py-5">
     <div class="container">
-        <div class="menu-container">
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Torta de Morango">
-                <div class="text-center">
-                    <h5>Torta de Morango</h5>
-                    <p>Deliciosa torta recheada com morangos frescos e chantilly.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Brownie de Chocolate">
-                <div class="text-center">
-                    <h5>Brownie de Chocolate</h5>
-                    <p>Brownie artesanal feito com o mais puro chocolate belga.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cheesecake de Limão">
-                <div class="text-center">
-                    <h5>Cheesecake de Limão</h5>
-                    <p>Combinação perfeita de cremosidade e um toque cítrico.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Bolo Red Velvet">
-                <div class="text-center">
-                    <h5>Bolo Red Velvet</h5>
-                    <p>Tradicional bolo americano com cobertura de cream cheese.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/500" alt="Padaria" class="img-fluid rounded">
         </div>
+        <div class="col-md-6">
+          <h2>Sobre Nós</h2>
+          <p>
+            Fundada em 1990, nossa padaria é um negócio familiar que se dedica a oferecer os melhores produtos frescos todos os dias. 
+            Nosso compromisso é com a qualidade, sabor e um atendimento acolhedor que faz nossos clientes se sentirem em casa.
+          </p>
+        </div>
+      </div>
     </div>
-    <h5>Nossas Bebidas</h5>
+  </section>
+
+  <!-- Seção História -->
+  <section id="historia" class="py-5 bg-light">
     <div class="container">
-        <div class="menu-container">
-           
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Torta de Morango">
-                <div class="text-center">
-                    <h5>Torta de Morango</h5>
-                    <p>Deliciosa torta recheada com morangos frescos e chantilly.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Brownie de Chocolate">
-                <div class="text-center">
-                    <h5>Brownie de Chocolate</h5>
-                    <p>Brownie artesanal feito com o mais puro chocolate belga.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-           
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cheesecake de Limão">
-                <div class="text-center">
-                    <h5>Cheesecake de Limão</h5>
-                    <p>Combinação perfeita de cremosidade e um toque cítrico.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Bolo Red Velvet">
-                <div class="text-center">
-                    <h5>Bolo Red Velvet</h5>
-                    <p>Tradicional bolo americano com cobertura de cream cheese.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-
-            
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/300x200" alt="Cupcake Gourmet">
-                <div class="text-center">
-                    <h5>Cupcake Gourmet</h5>
-                    <p>Mini bolinhos decorados, perfeitos para qualquer ocasião.</p>
-                    <button>Ver Mais</button>
-                </div>
-            </div>
-            
+      <h2 class="text-center">Nossa História</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <img src="https://via.placeholder.com/300" alt="Fundação" class="img-fluid rounded">
+          <h4 class="mt-3">Início</h4>
+          <p>Começamos como uma pequena padaria de bairro, com receitas tradicionais passadas de geração em geração.</p>
         </div>
+        <div class="col-md-4">
+          <img src="https://via.placeholder.com/300" alt="Crescimento" class="img-fluid rounded">
+          <h4 class="mt-3">Crescimento</h4>
+          <p>Ao longo dos anos, expandimos nossos serviços e nos tornamos referência em pães artesanais e doces caseiros.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://via.placeholder.com/300" alt="Futuro" class="img-fluid rounded">
+          <h4 class="mt-3">O Futuro</h4>
+          <p>Hoje, continuamos inovando sem perder nossas raízes, trazendo novidades e mantendo a tradição viva.</p>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="py-5">
+    <div class="container text-center">
+      <h2>Entre em Contato</h2>
+      <p>Quer saber mais ou fazer um pedido? Estamos à disposição!</p>
+      <a href="mailto:contato@nossapadaria.com" class="btn btn-primary">Enviar E-mail</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Nossa Padaria. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
