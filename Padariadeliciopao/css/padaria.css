@@ -11,6 +11,7 @@
 
 .icone-navbar{
   font-size: 20pt;
+  font-weight: bold;
   height: 15pt;
 
 }
@@ -26,6 +27,7 @@ footer {
 .footer-contact p {
     margin: 0;
     font-size: 14px;
+    font-weight: bold;
 }
 .footer-contact a {
     color: #007bff;
